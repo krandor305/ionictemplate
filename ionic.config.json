@@ -1,5 +1,7 @@
 {
   "name": "moremap",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
