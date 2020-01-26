@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-item>
+  <!--<ion-input type="text" name="adresse" [(ngModel)]="address" (change)="onsubmitaddress()"></ion-input>-->
+</ion-item>
+</ion-header>
+
+<ion-content>
+<IonList>
+<IonItem *ngFor="let event of evenements">
+<IonLabel>{{event.title}}</IonLabel><!--photo a ajouter plus description-->
+</IonItem>
+</IonList>
+</ion-content>

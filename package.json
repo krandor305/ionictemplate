@@ -27,6 +27,7 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.7.1",
     "@types/leaflet": "^1.5.7",
+    "cordova-android": "8.1.0",
     "cordova-sqlite-storage": "^4.0.0",
     "core-js": "^2.5.4",
     "express": "^4.17.1",
@@ -34,7 +35,7 @@
     "mysql": "^2.17.1",
     "passport-facebook": "^3.0.0",
     "passport-local": "^1.0.0",
-    "rxjs": "~6.5.1",
+    "rxjs": "^6.4.0",
     "rxjs-compat": "^6.5.4",
     "tslib": "^1.9.0",
     "uk.co.workingedge.cordova.plugin.sqliteporter": "^1.1.1",
@@ -54,6 +55,12 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^8.9.5",
     "codelyzer": "^5.0.0",
+    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^4.1.3",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-whitelist": "^1.3.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -64,13 +71,24 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "^3.4.5"
   },
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
       "cordova-sqlite-storage": {},
-      "uk.co.workingedge.cordova.plugin.sqliteporter": {}
-    }
+      "uk.co.workingedge.cordova.plugin.sqliteporter": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {}
+    },
+    "platforms": [
+      "android"
+    ]
   }
 }
